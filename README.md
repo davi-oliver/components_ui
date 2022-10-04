@@ -103,4 +103,4 @@ veja:
 
 ## Exemple 
 	
- 
+ <img src="/asset/home.png" alt="home page exemple" width="350"/>
