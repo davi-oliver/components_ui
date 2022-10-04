@@ -1,7 +1,7 @@
-name: components_qt_kit
+name: components_ui
 description: helper widget packages for qt projects.
-version: 0.1.3
-homepage: https://github.com/tobiassilva/components_qt_kit.git
+version: 0.0.1
+homepage: https://github.com/davi-oliver/components_ui
  
 environment:
   sdk: ">=2.12.0 <3.0.0"

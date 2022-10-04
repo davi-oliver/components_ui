@@ -141,13 +141,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.16.0"
-  components_qt_kit:
+  components_ui:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.1.3"
+    version: "0.0.1"
   connectivity:
     dependency: transitive
     description:

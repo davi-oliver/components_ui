@@ -1,14 +1,14 @@
 // import 'dart:convert';
 // import 'dart:ui';
 
-// import 'package:components_qt_kit/widgets/ui_kits/globals/kit_globals_functions.dart';
+// import 'package:components_ui/widgets/ui_kits/globals/kit_globals_functions.dart';
 // import 'package:crypto/crypto.dart';
 // import 'package:firebase_core/firebase_core.dart';
 // import 'package:flutter/material.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import 'package:google_sign_in/google_sign_in.dart';
 
-// import 'package:components_qt_kit/components_qt_kit.dart';
+// import 'package:components_ui/components_ui.dart';
 // import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 // import 'dart:convert';
 // import 'dart:math';

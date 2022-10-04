@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:components_qt_kit/components_qt_kit.dart';
+import 'package:components_ui/widgets/ui_kits/kit_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:multi_image_picker2/multi_image_picker2.dart';

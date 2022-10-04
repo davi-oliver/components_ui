@@ -1,4 +1,4 @@
- 
+<!--  
 ## [0.1.3] - Décima Terceira Release.
 
 * Décima Terceira Release
@@ -46,7 +46,7 @@
 
 ## [0.0.2] - Segundo Release.
 
-* Segundo Release
+* Segundo Release -->
 
 ## [0.0.1] - Primeiro Release.
 

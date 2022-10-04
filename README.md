@@ -11,7 +11,7 @@ Adicione ao seu pubspec.yaml o pacote
  -- flutter pub add components_ui_devtools <br />
 </code>
 ou no seu pubspec cole: <br />
--components_qt_kit: <br />
+-components_ui: <br />
 ---git: <br />
 -----url: https://github.com/davi-oliver/components_ui <br />
  

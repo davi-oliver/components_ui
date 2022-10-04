@@ -1,10 +1,13 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:components_qt_kit/components_qt_kit.dart';
-import 'package:components_qt_kit/widgets/ui_kits/kit_image_picker_view.dart';
+import 'package:components_ui/widgets/ui_kits/kit_appbars.dart';
+import 'package:components_ui/widgets/ui_kits/kit_buttons.dart';
+import 'package:components_ui/widgets/ui_kits/kit_image_picker_view.dart';
+import 'package:components_ui/widgets/ui_kits/kit_loading.dart';
+import 'package:components_ui/widgets/ui_kits/kit_text_field.dart';
 import 'package:example/store/store.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-// import 'package:components_qt_kit/widgets/ui_kits/ui_appbars.dart';+
+// import 'package:components_ui/widgets/ui_kits/ui_appbars.dart';+
 import 'package:provider/provider.dart';
 
 void main() {

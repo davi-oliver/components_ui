@@ -1,5 +1,5 @@
-// import 'package:components_qt_kit/components_qt_kit.dart';
-// import 'package:components_qt_kit/widgets/ui_kits/kit_login/kit_login_google_facebook_apple_id.dart';
+// import 'package:components_ui/components_ui.dart';
+// import 'package:components_ui/widgets/ui_kits/kit_login/kit_login_google_facebook_apple_id.dart';
 // import 'package:flutter/material.dart';
 
 // class KitLogin extends StatefulWidget {
