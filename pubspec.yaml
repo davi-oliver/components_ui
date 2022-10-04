@@ -10,21 +10,21 @@ environment:
 dependencies:
   connectivity: ^3.0.6
   crypto: ^3.0.1
-  firebase_analytics: ^9.1.4
-  firebase_auth: ^3.1.0
-  firebase_auth_web: ^3.1.0
-  firebase_core: ^1.6.0
-  firebase_database: ^9.0.10
-  firebase_messaging: ^11.2.12
+  # firebase_analytics: ^9.1.4
+  # firebase_auth: ^3.1.0
+  # firebase_auth_web: ^3.1.0
+  # firebase_core: ^1.6.0
+  # firebase_database: ^9.0.10
+  # firebase_messaging: ^11.2.12
   flutter:
     sdk: flutter
-  flutter_facebook_auth: ^4.0.1
+  # flutter_facebook_auth: ^4.0.1
   font_awesome_flutter: ^10.1.0
-  google_sign_in: ^5.3.0
+  # google_sign_in: ^5.3.0
   http: ^0.13.4
   multi_image_picker2: ^5.0.02
   provider: ^6.0.3
-  sign_in_with_apple: ^3.0.0
+  # sign_in_with_apple: ^3.0.0
   flutter_mobx: ^2.0.2
   mobx: ^2.0.4
   mobx_codegen: ^2.0.3
