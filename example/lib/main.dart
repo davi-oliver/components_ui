@@ -1,5 +1,3 @@
- 
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:components_qt_kit/components_qt_kit.dart';
 import 'package:components_qt_kit/widgets/ui_kits/kit_image_picker_view.dart';
@@ -94,13 +92,12 @@ class _HomePageState extends State<HomePage> {
                           ),
                           child: AnimatedTextKit(
                             animatedTexts: [
-                              TypewriterAnimatedText('Q U A D R A N T '),
-                              TypewriterAnimatedText('C O M P O N E N T  '),
+                              TypewriterAnimatedText('C O M P O N E N T S '),
+                              TypewriterAnimatedText('U I'),
                               TypewriterAnimatedText('K I T '),
-                              TypewriterAnimatedText('A G R A D E C E '),
                               TypewriterAnimatedText('A V A L I E - N O S '),
-                              TypewriterAnimatedText(
-                                  'D E I X E  S U A  S U G E S T Ã O'),
+                              TypewriterAnimatedText('D E I X E  S U A '),
+                              TypewriterAnimatedText(' S U G E S T Ã O'),
                             ],
                           ),
                         ),
