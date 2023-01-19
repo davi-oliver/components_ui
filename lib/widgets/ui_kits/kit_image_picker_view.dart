@@ -272,7 +272,7 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
   SliverGridDelegate _gridConfig() {
     return SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: listImages.isNotEmpty ? listImages.length : 1,
-      mainAxisExtent: 200,
+      mainAxisExtent: 100,
       crossAxisSpacing: 15,
       mainAxisSpacing: 15.0,
       childAspectRatio: 2,
