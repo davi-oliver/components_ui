@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                           actionBarTitle: 'Quadrant Components',
                           boxDecorationButton: BoxDecoration(
                             color: Colors.blue[800],
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           titleButton: 'Adicionar imagem',
                           iconSufix: Icon(
@@ -164,7 +164,6 @@ class _HomePageState extends State<HomePage> {
                           height: MediaQuery.of(context).size.height * .08,
                           width: MediaQuery.of(context).size.width * .5,
                         ),
-
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 20),
                           child: Row(
@@ -210,36 +209,42 @@ class _HomePageState extends State<HomePage> {
                                 ]),
                           ),
                         ),
-// textfield de email
+                        // textfield de email
                         KitTextfield(
                           containGradient: true,
                           containTiltle: true,
                           textInTextField: 'Digite seu email',
                           textStyleInTextField: TextStyle(
-                              color: Colors.black87,
-                              fontWeight: FontWeight.w500),
+                            color: Colors.black87,
+                            fontWeight: FontWeight.w500,
+                          ),
                           margin: EdgeInsets.symmetric(
-                              horizontal: 50, vertical: 15),
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 2, vertical: 4),
+                            horizontal: 50,
+                            vertical: 15,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 2,
+                            vertical: 4,
+                          ),
                           colorMaterial: Colors.white,
                           textFieldWithGradient: true,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.centerRight,
-                                colors: const [
-                                  Colors.white,
-                                  Colors.deepPurpleAccent,
-                                ]),
+                              begin: Alignment.topLeft,
+                              end: Alignment.centerRight,
+                              colors: const [
+                                Colors.white,
+                                Colors.deepPurpleAccent,
+                              ],
+                            ),
                           ),
                           prefix: Icon(
                             Icons.email_outlined,
                             color: Colors.black38,
                           ),
                         ),
-//textfield de senha
+                        //textfield de senha
                         KitTextfield(
                           containGradient: true,
                           containTiltle: true,
@@ -256,24 +261,26 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.centerRight,
-                                colors: const [
-                                  Colors.white,
-                                  Colors.deepPurpleAccent,
-                                ]),
+                              begin: Alignment.topLeft,
+                              end: Alignment.centerRight,
+                              colors: const [
+                                Colors.white,
+                                Colors.deepPurpleAccent,
+                              ],
+                            ),
                           ),
                           prefix: Icon(
                             Icons.lock_outlined,
                             color: Colors.black38,
                           ),
                           sufix: IconButton(
-                              onPressed: () {
-                                setState(() => _icon = !_icon);
-                              },
-                              icon: _icon
-                                  ? Icon(Icons.visibility)
-                                  : Icon(Icons.visibility_off)),
+                            onPressed: () {
+                              setState(() => _icon = !_icon);
+                            },
+                            icon: _icon
+                                ? Icon(Icons.visibility)
+                                : Icon(Icons.visibility_off),
+                          ),
                         ),
                         SizedBox(
                           height: 20,

@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:components_ui/widgets/ui_kits/kit_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:multi_image_picker2/multi_image_picker2.dart';
+import 'package:multiple_images_picker/multiple_images_picker.dart';
 
 List<Asset> listImages = [];
 List<dynamic> imagensConvertidas = [];
@@ -31,7 +31,8 @@ class KitImagePickerView extends StatefulWidget {
 
   final List<dynamic>? listConverted;
 
-  KitImagePickerView({
+  const KitImagePickerView({
+    super.key,
     this.actionBarTitle = '',
     this.containTitle,
     this.marginHorizontal = 0,
@@ -63,7 +64,7 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
 
   Future<void> _getImagesStoreUser() async {
     listImages.addAll(
-      await MultiImagePicker.pickImages(
+      await MultipleImagesPicker.pickImages(
         maxImages: widget.maxImages!,
         enableCamera: widget.enableCamera,
         materialOptions: MaterialOptions(
@@ -80,7 +81,7 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
     try {
       listImages.removeAt(index);
       if (listImages.isNotEmpty) {
-        var aux2 = await MultiImagePicker.pickImages(
+        var aux2 = await MultipleImagesPicker.pickImages(
             maxImages: widget.maxImages!,
             enableCamera: true,
             materialOptions: MaterialOptions(
@@ -94,7 +95,7 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
           listImages.addAll(aux2);
         });
       } else {
-        var aux2 = await MultiImagePicker.pickImages(
+        var aux2 = await MultipleImagesPicker.pickImages(
             maxImages: widget.maxImages!,
             enableCamera: true,
             materialOptions: MaterialOptions(
@@ -136,10 +137,11 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      //width: MediaQuery.of(context).size.width,
       margin: EdgeInsets.symmetric(
-          horizontal: widget.marginHorizontal!,
-          vertical: widget.marginVertical!),
+        horizontal: widget.marginHorizontal!,
+        vertical: widget.marginVertical!,
+      ),
       child: Column(
         children: [
           widget.convertImage! ? _buttomImageConvert() : _buttomImage(),
@@ -167,27 +169,31 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
         },
         decorationButton: widget.boxDecorationButton ??
             BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment.bottomLeft,
-                    colors: [
-                      Colors.blue.withOpacity(0.66),
-                      Colors.blueAccent.withOpacity(0.6),
-                    ]),
-                borderRadius: const BorderRadius.all(Radius.circular(4)),
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.black26,
-                      offset: Offset(4, 4),
-                      blurRadius: 4,
-                      spreadRadius: -2),
-                ]),
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [
+                  Colors.blue.withOpacity(0.66),
+                  Colors.blueAccent.withOpacity(0.6),
+                ],
+              ),
+              borderRadius: const BorderRadius.all(Radius.circular(4)),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black26,
+                  offset: Offset(4, 4),
+                  blurRadius: 4,
+                  spreadRadius: -2,
+                ),
+              ],
+            ),
         widgetCenter: Text(
-            widget.titleButton == ''
-                ? 'Adicionar Imagens'
-                : widget.titleButton!,
-            style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold)),
+          widget.titleButton == '' ? 'Adicionar Imagens' : widget.titleButton!,
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         iconSufix: widget.iconSufix ??
             Icon(
               Icons.camera,
@@ -219,31 +225,35 @@ class _KitImagePickerViewState extends State<KitImagePickerView> {
         },
         decorationButton: widget.boxDecorationButton ??
             BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment.bottomLeft,
-                    colors: [
-                      Colors.blue.withOpacity(0.66),
-                      Colors.blueAccent.withOpacity(0.6),
-                    ]),
-                borderRadius: const BorderRadius.all(Radius.circular(8)),
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.black26,
-                      offset: Offset(4, 4),
-                      blurRadius: 4,
-                      spreadRadius: -2),
-                ]),
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [
+                  Colors.blue.withOpacity(0.66),
+                  Colors.blueAccent.withOpacity(0.6),
+                ],
+              ),
+              borderRadius: const BorderRadius.all(Radius.circular(8)),
+              boxShadow: const [
+                BoxShadow(
+                    color: Colors.black26,
+                    offset: Offset(4, 4),
+                    blurRadius: 4,
+                    spreadRadius: -2),
+              ],
+            ),
         widgetCenter: Row(
           children: [
             Text(
-                widget.titleButton == ''
-                    ? 'Adicionar Imagem Base 64'
-                    : widget.titleButton!,
-                style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold)),
+              widget.titleButton == ''
+                  ? 'Adicionar Imagem Base 64'
+                  : widget.titleButton!,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
         iconSufix: widget.iconSufix ??
