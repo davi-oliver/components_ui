@@ -42,11 +42,11 @@
 
 ## [0.0.3] - Terceira Release.
 
-* Terceiro Release
+* Terceiro Release -->
 
 ## [0.0.2] - Segundo Release.
 
-* Segundo Release -->
+* Segundo Release 
 
 ## [0.0.1] - Primeiro Release.
 
